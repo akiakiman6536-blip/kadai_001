@@ -1,0 +1,157 @@
+/* PC、スマホ共通スタイル */
+* {
+  box-sizing: border-box;
+  color: #000000;
+}
+h2 {
+  font-size: 34px;
+  text-align: center;
+  margin-top: 50px;
+}
+p {
+  font-size: 18px;
+}
+body {
+  max-width: 1080px;
+  margin: 0 auto 0 auto;
+  font-family: "Noto Sans JP","Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+/* ヘッダー */
+/* ナビゲーションのレイアウト */
+ #nav-pc {
+   font-size: 34px;
+ } 
+ #nav-pc ul {
+   display: flex;
+   justify-content: space-between;
+   padding-left: 0;
+   margin: 30px 150px 30px 150px;
+ }
+ #nav-pc li {
+   list-style: none;
+ } 
+ /* ナビゲーションのリンクの装飾設定 */
+ #nav-pc a {
+   text-decoration: none;
+   margin-left: 20px;
+   color: #0d0d0d; 
+   font-size: 34px;
+   font-weight: bold;
+ }
+ #nav-pc li:first-child a {
+  border: 1px solid #000000;
+}
+  #nav-pc a:hover {
+   text-decoration: underline;
+ }
+
+/* メインビジュアル*/
+#main-visual {
+  width: 100%;
+  max-width: 1080px;
+}
+
+#main-visual > img {
+  width: 100%;
+  display: block;
+}
+
+/* about */
+#about {
+   margin: 20px auto 0px auto;
+}
+#about .about-flex {
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+   width: 100%;
+   max-width: 700px;
+   margin: 40px auto 0 auto;
+}
+#about-photo {
+  margin-right: 60px;
+  width: 200px;
+  flex-shrink: 0;
+}
+#about-photo > img {
+  width: 100%;
+  border-radius: 50%;
+  display: block;
+}
+#about-message {
+  margin-left: 40px;
+  flex: 1;
+}
+#about-message h3 {
+  font-size: 24px;
+}
+
+/*** works */
+#works {
+   margin: 20px auto 0px auto;
+}
+#works .works-flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px auto 0 auto;
+  width: 100%;
+  max-width: 800px;
+}
+.works-flex > div {
+  width: 30%;
+  margin: 0;
+}
+.works-photo {
+  width: 100%;
+  display: block;
+}
+.works-flex p {
+  font-size: 18px;
+}
+
+/*フッター*/
+footer p {
+  text-align: center;
+  font-size: 18px;
+}
+
+/**? スマホ用スタイル */
+@media screen and (max-width: 767px) {
+  /*ヘッダー*/
+  #nav-pc ul {
+   display: flex;
+   justify-content: space-between;
+   margin: 30px 10px 30px 10px;
+ }
+  #nav-pc a {
+   font-size: 24px;
+  }
+
+ /*about*/
+ #about .about-flex {
+   flex-direction: column;
+   margin: 0 auto 0 auto;
+ }
+ #about-photo {
+  width: 80%;
+  margin: 0 auto 0 auto;
+ }
+ #about-message > div {
+  margin: 0 20px 0 20px;
+ }
+ 
+ /*works*/
+ .works-flex {
+  flex-direction: column;
+ }
+ .works-flex > div {
+  width: auto;
+  margin: 0 10px 30px 10px;
+ }
+ .works-photo {
+  width: 100%;
+ }
+  
+}

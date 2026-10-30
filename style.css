@@ -12,7 +12,6 @@ p {
   font-size: 18px;
 }
 body {
-  max-width: 1080px;
   margin: 0 auto 0 auto;
   font-family: "Noto Sans JP","Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
   background-color: #ffffff;
@@ -50,7 +49,6 @@ body {
 /* メインビジュアル*/
 #main-visual {
   width: 100%;
-  max-width: 1080px;
 }
 
 #main-visual > img {
